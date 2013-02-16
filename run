@@ -1,0 +1,3 @@
+#!/bin/sh
+DIR="$(dirname "$(readlink -f "$0")")"
+tmux new-session -d -s minecraft "java -Xms512M -Xmx2G -jar forge.jar nogui"
